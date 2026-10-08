@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-MODEL = "openai/gpt-oss-120b"   # good quality; see note below for a faster option
+MODEL = "openai/gpt-oss-120b"  
 
 SYSTEM = (
     "You answer questions using ONLY the provided context. "

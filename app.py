@@ -159,7 +159,7 @@ def with_badges(text):
 def sources_html(sources):
     cards = ""
     for i, s in enumerate(sources):
-        snippet = html.escape(s["text"][:420]).replace("\n", " ")
+        snippet = html.escape(s["text"][:900]).replace("\n", " ")
         cards += (f'<details class="src" style="animation-delay:{i * 0.18}s"><summary>'
                   f'<span class="cite">{s["n"]}</span><b>{html.escape(pretty(s["source"]))}</b>'
                   f'<em>page {s["page"]}</em></summary><p>{snippet}…</p></details>')
