@@ -1,0 +1,29 @@
+# ---------- Secrets (NEVER commit) ----------
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+rdbvenv/
+env/
+
+# ---------- Generated vector database (rebuild with: python src/ingest.py) ----------
+chroma_db/
+
+# ---------- Python cache / build ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ---------- Generated test output ----------
+test_results.txt
+
+# ---------- Editor / OS files ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
